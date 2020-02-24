@@ -1,0 +1,103 @@
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand img {
+    width: 175px;
+    height: 80px;
+}
+
+.info {
+    text-decoration: none;
+    text-align: center;
+    color: dimgrey;
+    margin-top: 8px;
+}
+
+.img-hover img {
+    transition: 0.5s;
+    position: relative;
+}
+
+.img-hover img:hover {
+    transform: scale(1.1);
+}
+
+.nav-item {
+    margin: 5px 0;
+    position: relative;
+}
+
+.motor-price {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.product-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: auto;
+    padding: 10px 0;
+}
+
+.price-block {
+    padding-left: 15px;
+}
+
+.price-bike {
+    margin: 10px 0;
+}
+
+.price-bike-title {
+    color: #550000;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #b50000;
+    text-transform: uppercase;
+}
+
+.row-price-bike {
+    margin: 10px 0;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.row-price {
+    text-align: right;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+.buy-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: orange;
+}
