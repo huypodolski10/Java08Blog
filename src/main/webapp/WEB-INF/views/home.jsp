@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+<%@ include file="/WEB-INF/views/layout/taglib.jsp"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +20,6 @@
 
 	<!-- Carousel -->
 	<div id="slideShow" class="carousel slide" data-ride="carousel">
-
 		<!-- Indicators -->
 		<ul class="carousel-indicators">
 			<li data-target="#slideShow" data-slide-to="0" class="active"></li>
@@ -31,20 +31,16 @@
 		<!-- Images-->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="${pageContext.request.contextPath}/img/slide1.jpg"
-					alt="Banner">
+				<img src="/img/slide1.jpg" alt="Banner">
 			</div>
 			<div class="carousel-item">
-				<img src="${pageContext.request.contextPath}/img/slide2.jpg"
-					alt="Banner">
+				<img src="/img/slide2.jpg" alt="Banner">
 			</div>
 			<div class="carousel-item">
-				<img src="${pageContext.request.contextPath}/img/slide3.jpg"
-					alt="Banner">
+				<img src="/img/slide3.jpg" alt="Banner">
 			</div>
 			<div class="carousel-item">
-				<img src="${pageContext.request.contextPath}/img/slide4.jpg"
-					alt="Banner">
+				<img src="/img/slide4.jpg" alt="Banner">
 			</div>
 		</div>
 
@@ -55,94 +51,94 @@
 			<span class="carousel-control-next-icon"></span>
 		</a>
 	</div>
-	<!-- End Carousel -->
 
 	<!-- Sport-bike -->
 	<section class="bg-light">
 		<div class="container">
+
 			<!-- Section title -->
-			<div class="text-uppercase text-center">
-				<a href="#" class="text-decoration-none text-reset">
+			<div class="text-uppercase text-center pt-2">
+				<a href="/sport-bike" class="text-decoration-none text-reset">
 					<h1>
 						<i class="fas fa-angle-double-right"></i> Sport-bike
 					</h1>
 				</a>
 			</div>
 
-			<!-- Motor list -->
-			<!--  <div class="grid-item-bike">
-				<ul class="row list-bike list-unstyled">
-					<li class="col-lg-4 img-hover mb-5"><a href="/motor-detail">
-							<img src="/img/H2.jpg" alt="Kawasaki Ninja H2"
-							class="img-thumbnail img-fluid">
-							<div class="info">
-								<h3>Kawasaki Ninja H2</h3>
-							</div>
-					</a></li>
-				</ul>
-			</div> -->
+			<!-- List -->
 			<div class="row py-3">
-				<div class="col-4 img-hover">
-					<a href="/motor-detail" class="text-decoration-none text-reset">
-						<img alt="Kawasaki Ninja H2" src="/img/H2.jpg"
-						class="img-thumbnail">
-						<h2 class="text-uppercase text-center pt-3">Kawasaki Ninja H2</h2>
-					</a>
-				</div>
+				<c:forEach var="sportBike" items="${sportBikes }">
+					<div class="col-4 img-hover">
+						<a href="/motor-detail" class="text-decoration-none text-reset">
+							<img alt="${sportBike.productName }"
+							src="${sportBike.productImgUrl }" class="img-thumbnail">
+							<h2 class="text-uppercase text-center pt-3">${sportBike.productName }</h2>
+						</a>
+					</div>
+				</c:forEach>
 			</div>
 		</div>
 	</section>
+
+	<hr class="my-0">
 
 	<!-- Naked-bike -->
-	<section class="bg-white">
+	<section class="bg-secondary text-white">
 		<div class="container">
-			<!-- Title -->
-			<div class="title-content">
-				<h1>Naked-bike</h1>
+
+			<!-- Section title -->
+			<div class="text-uppercase text-center pt-2">
+				<a href="/naked-bike" class="text-decoration-none text-reset">
+					<h1>
+						<i class="fas fa-angle-double-right"></i> Naked-bike
+					</h1>
+				</a>
 			</div>
 
-			<!-- Motor list -->
-			<div class="grid-item-bike">
-				<ul class="row list-bike list-unstyled">
-					<li class="col-lg-4 img-hover mb-5"><a href="/motor-detail">
-							<img src="/img/H2.jpg" alt="Kawasaki Ninja H2"
-							class="img-thumbnail img-fluid">
-							<div class="info">
-								<h3>Kawasaki Ninja H2</h3>
-							</div>
-							<div class="price">
-								990.000.000 <u>đ</u>
-							</div>
-					</a></li>
-				</ul>
+			<!-- List -->
+			<div class="row py-3">
+				<c:forEach var="nakedBike" items="${nakedBikes }">
+					<div class="col-4 img-hover">
+						<a href="/motor-detail" class="text-decoration-none text-reset">
+							<img alt="${nakedBike.productName }"
+							src="${nakedBike.productImgUrl }" class="img-thumbnail">
+							<h2 class="text-uppercase text-center pt-3">${nakedBike.productName }</h2>
+						</a>
+					</div>
+				</c:forEach>
 			</div>
 		</div>
 	</section>
 
-	<!-- Components -->
+	<hr class="my-0">
+
+	<!-- Accessories -->
 	<section class="bg-light">
 		<div class="container">
-			<!-- Title -->
-			<div class="title-content">
-				<h1>Phụ tùng</h1>
+
+			<!-- Section title -->
+			<div class="text-uppercase text-center pt-2">
+				<a href="/bike-accessory" class="text-decoration-none text-reset">
+					<h1>
+						<i class="fas fa-angle-double-right"></i> Phụ tùng
+					</h1>
+				</a>
 			</div>
 
-			<!-- Motor list -->
-			<div class="grid-item-bike">
-				<ul class="row list-bike list-unstyled">
-					<li class="col-lg-4 img-hover mb-5"><a href="/motor-detail">
-							<img src="/img/H2.jpg" alt="Kawasaki Ninja H2"
-							class="img-thumbnail img-fluid">
-							<div class="info">
-								<h3>Kawasaki Ninja H2</h3>
-							</div>
-
-					</a></li>
-				</ul>
+			<!-- List -->
+			<div class="row py-3">
+				<c:forEach var="accessory" items="${accessories }">
+					<div class="col-4 img-hover">
+						<a href="/motor-detail" class="text-decoration-none text-reset">
+							<img alt="${accessory.productName }"
+							src="${accessory.productImgUrl }" class="img-thumbnail">
+							<h4 class="text-uppercase text-center pt-3">${accessory.productName }</h4>
+						</a>
+					</div>
+				</c:forEach>
 			</div>
 		</div>
 	</section>
-
 
 	<!-- Footer -->
 	<%@ include file="/WEB-INF/views/layout/footer.jsp"%>

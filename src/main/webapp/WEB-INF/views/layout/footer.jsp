@@ -1,122 +1,111 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
 
-<footer class="page-footer text-light font-small bg-dark">
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark pt-4 text-white">
 
 	<!-- Footer Links -->
-	<div class="container-fluid">
+	<div class="container text-center text-md-left">
 
 		<!-- Grid row -->
 		<div class="row">
 
 			<!-- Grid column -->
-			<div class="footer-info col-md-4 ">
+			<div class="col-md-4 mx-auto">
 
 				<!-- Content -->
-				<img src="${pageContext.request.contextPath}/img/Footer_logo.jpg"
-					alt="Footer Logo" class="img-fluid">
-				<p>CHỢ XE MÁY - Cập nhật hàng ngày các tin đăng bán xe trên toàn
-					quốc.</p>
-				<p>SIÊU THỊ PHỤ TÙNG - Phụ tùng, phụ kiện, đồ bảo hộ chính hãng
-					nhập khẩu trực tiếp từ Nhật Bản.</p>
-				<p>MEDIA - Cập nhật tin tức, sự kiện và các bài viết chia sẻ
-					kinh nghiệm về xe gắn máy.</p>
-				<a href="#"> <img
-					src="https://webikevn-8743.kxcdn.com/frontend/img/bo_cong_thuong.svg"
-					alt="Certification" title="Webike.vn đã đăng ký với bộ công thương">
+				<a href="/home" class="text-decoration-none text-reset">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">www.webike.vn</h5>
 				</a>
+
 			</div>
+			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-md-2 mt-3">
-				<!-- Bike Market -->
-				<h5>Chợ xe máy</h5>
-				<ul class="list-unstyled">
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Phân khối lớn</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Hãng xe</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Phân khối</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Loại xe</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Tỉnh thành</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Cửa hàng</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Tiện ích</a></li>
-				</ul>
+			<div class="col-md-2 mx-auto">
+
+				<!-- Links -->
+				<a href="/sport-bike" class="text-decoration-none text-reset">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Sport-bike</h5>
+				</a>
+
 			</div>
+			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-md-2 mt-3">
-				<!-- Components Market -->
-				<h5>Siêu thị phụ tùng</h5>
-				<ul class="list-unstyled">
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Dòng xe</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Hãng xe</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Chính hãng</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Phụ tùng</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Mũ bảo hiểm</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Đồ bảo hộ</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Phụ kiện</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Thành viên</a></li>
-				</ul>
+			<div class="col-md-2 mx-auto">
+
+				<!-- Links -->
+				<a href="/naked-bike" class="text-decoration-none text-reset">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Naked-bike</h5>
+				</a>
+
 			</div>
+			<!-- Grid column -->
 
 			<!-- Grid column -->
-			<div class="col-md-2 mt-3">
-				<!-- Bike information -->
-				<h5>Tin tức xe máy</h5>
-				<ul class="list-unstyled">
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Trang chủ</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Tin tức - sự kiện</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Thông tin xe máy</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Kinh nghiệm</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Xe độ</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Video giải trí</a></li>
-				</ul>
-			</div>
+			<div class="col-md-2 mx-auto">
 
+				<!-- Links -->
+				<a href="/bike-accessory" class="text-decoration-none text-reset">
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Phụ tùng</h5>
+				</a>
+
+			</div>
 			<!-- Grid column -->
-			<div class="col-md-2 mt-3">
-				<!-- More information -->
-				<h5>Thông tin khác</h5>
-				<ul class="list-unstyled">
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Quy chế hoạt động</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Chính sách bảo mật</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Bản quyền</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Hỗ trợ khách hàng</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Sơ đồ trang</a></li>
-					<li><i class="fa fa-caret-right"></i> <a href="#"
-						class="text-light">Liên hệ</a></li>
-				</ul>
+
+		</div>
+		<!-- Grid row -->
+
+	</div>
+	<!-- Footer Links -->
+
+	<hr>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-6 mx-auto">
+				<blockquote class="blockquote">
+					<p>Riding a bike is like an art, something you do because you
+						feel something inside.</p>
+					<footer class="blockquote-footer">Valentino Rossi</footer>
+				</blockquote>
+			</div>
+			<div class="col-6 mx-auto">
+				<img src="img/Footer_logo.jpg" alt="Footer Logo" class="img-fluid">
 			</div>
 		</div>
-
 	</div>
+
+	<hr>
+
+	<!-- Social buttons -->
+	<ul class="list-unstyled list-inline text-center">
+		<li class="list-inline-item"><a class="btn-floating btn-fb mx-1">
+				<i class="fab fa-facebook-f"> </i>
+		</a></li>
+		<li class="list-inline-item"><a class="btn-floating btn-tw mx-1">
+				<i class="fab fa-twitter"> </i>
+		</a></li>
+		<li class="list-inline-item"><a
+			class="btn-floating btn-gplus mx-1"> <i
+				class="fab fa-google-plus-g"> </i>
+		</a></li>
+		<li class="list-inline-item"><a class="btn-floating btn-li mx-1">
+				<i class="fab fa-linkedin-in"> </i>
+		</a></li>
+		<li class="list-inline-item"><a
+			class="btn-floating btn-dribbble mx-1"> <i
+				class="fab fa-dribbble"> </i>
+		</a></li>
+	</ul>
+	<!-- Social buttons -->
 
 	<!-- Copyright -->
-	<div class="footer-copyright text-center p-3">
-		© 2020 Copyright: <a href="#">Webike.vn</a>
+	<div class="footer-copyright text-center py-3">
+		© 2020 Copyright: <a href="/home" class="text-decoration-none">
+			www.webike.vn</a>
 	</div>
+	<!-- Copyright -->
+
 </footer>

@@ -37,5 +37,6 @@ public class MvcConf implements WebMvcConfigurer {
 		registry.addResourceHandler("/css/**").addResourceLocations("classpath:/META-INF/css/");
 		registry.addResourceHandler("/img/**").addResourceLocations("classpath:/META-INF/img/");
 		registry.addResourceHandler("/js/**").addResourceLocations("classpath:/META-INF/js/");
+		registry.addResourceHandler("/vid/**").addResourceLocations("classpath:/META-INF/vid/");
 	}
 }

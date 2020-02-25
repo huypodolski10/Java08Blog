@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-light bg-light">
 	<a href="/home" class="navbar-brand"> <img
-		src="${pageContext.request.contextPath}/img/Webike_logo.jpg"
+		src="/img/Webike_logo.jpg"
 		alt="Webike.vn">
 	</a>
 	<button class="navbar-toggler" data-toggle="collapse"
@@ -12,19 +12,19 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarMenu">
 		<ul class="navbar-nav">
-			<li class="nav-item align-self-center"><a href="#"
+			<li class="nav-item align-self-center"><a href="/sport-bike"
 				class="nav-link">
 					<h3>
 						<i class='fas fa-biking'></i> Sport-bike
 					</h3>
 			</a></li>
-			<li class="nav-item align-self-center"><a href="#"
+			<li class="nav-item align-self-center"><a href="/naked-bike"
 				class="nav-link">
 					<h3>
 						<i class="fas fa-motorcycle"></i> Naked-bike
 					</h3>
 			</a></li>
-			<li class="nav-item align-self-center"><a href="#"
+			<li class="nav-item align-self-center"><a href="/bike-accessory"
 				class="nav-link">
 					<h3>
 						<i class="fas fa-cogs"></i> Phụ tùng
