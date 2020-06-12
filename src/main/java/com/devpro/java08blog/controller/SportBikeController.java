@@ -4,37 +4,39 @@
 */
 package com.devpro.java08blog.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 
-import com.devpro.java08blog.dto.MotorBike;
-import com.devpro.java08blog.dto.PageTitle;
+import com.devpro.java08blog.entities.Motorbike;
+import com.devpro.java08blog.repositories.CategoryRepository;
+import com.devpro.java08blog.services.MotorbikeService;
 
 @Controller
 public class SportBikeController {
 
-	@RequestMapping(value = { "/sport-bike" }, method = RequestMethod.GET)
+	@Autowired MotorbikeService motorbikeService;
+	@Autowired CategoryRepository categoryRepo;
+	
+	@GetMapping("/sport-bike")
 	public String sportBike(final ModelMap model, final HttpServletRequest request,
 			final HttpServletResponse response) {
-
-		model.addAttribute("pageTitle", new PageTitle("Các sản phẩm sport-bike"));
-
-		// Create a sport-bike list
-		List<MotorBike> sportBikes = new ArrayList<>();
-		sportBikes.add(new MotorBike("Kawasaki Ninja H2", "img/H2.jpg", "sport-bike"));
-		sportBikes.add(new MotorBike("Kawasaki Ninja H2", "img/H2.jpg", "sport-bike"));
-		sportBikes.add(new MotorBike("Kawasaki Ninja H2", "img/H2.jpg", "sport-bike"));
-
-		model.addAttribute("sportBikes", sportBikes);
-
+		int pageNumber = 1;
+		if (request.getParameter("page") != null) {
+			pageNumber = Integer.valueOf(request.getParameter("page"));
+			if (pageNumber < 1)
+				pageNumber = 1;
+		}
+		List<Motorbike> motorbikes = motorbikeService.getAllSpecificBikes(categoryRepo.findByName("Sport-bike"), pageNumber);
+		
+		model.addAttribute("sportBikes", motorbikes);
+		model.addAttribute("currentPage", pageNumber);
 		return "sport-bike";
 	}
 }

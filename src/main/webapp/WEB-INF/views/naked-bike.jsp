@@ -90,7 +90,7 @@
 	</div>
 
 	<!-- Naked-bike -->
-	<section class="bg-light">
+	<section class="bg-light text-dark">
 		<div class="container">
 
 			<!-- Section title -->
@@ -104,18 +104,26 @@
 
 			<!-- List -->
 			<div class="row py-3">
-				<c:forEach var="nakedBike" items="${nakedBikes }">
+				<c:forEach var="nakedBike" items="${nakedBikes}">
 					<div class="col-4 img-hover">
-						<a href="/motor-detail" class="text-decoration-none text-reset">
-							<img alt="${nakedBike.productName }"
-							src="${nakedBike.productImgUrl }" class="img-thumbnail">
-							<h2 class="text-uppercase text-center pt-3">${nakedBike.productName }</h2>
+						<a href="/motor-detail/${nakedBike.id}" class="text-decoration-none text-reset">
+  						<img alt="${nakedBike.name}" src="/files/${nakedBike.attachments[0].name}" class="img-thumbnail">	
+							<h2 class="text-uppercase text-center pt-3">${nakedBike.name}</h2>
 						</a>
 					</div>
 				</c:forEach>
 			</div>
 		</div>
 	</section>
+	
+	<hr class="my-4">
+	
+	<div class="clearfix text-center">
+		<a class="btn btn-warning text-white" href="/naked-bike?page=${currentPage - 1}">Quay lại</a>
+		<a class="btn btn-warning text-white" href="/naked-bike?page=${currentPage + 1}">Xem tiếp</a>
+	</div>
+
+	<hr class="my-4">
 
 	<!-- Footer -->
 	<%@ include file="/WEB-INF/views/layout/footer.jsp"%>

@@ -89,7 +89,7 @@
 	</div>
 
 	<!-- Sport-bike -->
-	<section class="bg-light">
+	<section class="bg-light text-dark">
 		<div class="container">
 
 			<!-- Section title -->
@@ -103,18 +103,27 @@
 
 			<!-- List -->
 			<div class="row py-3">
-				<c:forEach var="sportBike" items="${sportBikes }">
+				<c:forEach var="sportBike" items="${sportBikes}">
 					<div class="col-4 img-hover">
-						<a href="/motor-detail" class="text-decoration-none text-reset">
-							<img alt="${sportBike.productName }"
-							src="${sportBike.productImgUrl }" class="img-thumbnail">
-							<h2 class="text-uppercase text-center pt-3">${sportBike.productName }</h2>
+						<a href="/motor-detail/${sportBike.id}" class="text-decoration-none text-reset">
+							<img alt="${sportBike.name}"
+							src="/files/${sportBike.attachments[0].name}" class="img-thumbnail">
+							<h2 class="text-uppercase text-center pt-3">${sportBike.name}</h2>
 						</a>
 					</div>
 				</c:forEach>
 			</div>
 		</div>
 	</section>
+	
+	<hr class="my-4">
+	
+	<div class="clearfix text-center">
+		<a class="btn btn-warning text-white" href="/sport-bike?page=${currentPage - 1}">Quay lại</a>
+		<a class="btn btn-warning text-white" href="/sport-bike?page=${currentPage + 1}">Xem tiếp</a>
+	</div>
+	
+	<hr class="my-4">
 
 	<!-- Footer -->
 	<%@ include file="/WEB-INF/views/layout/footer.jsp"%>
