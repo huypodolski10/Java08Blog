@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-<title>${pageTitle.name}</title>
+<title>Trang chủ</title>
 
 <%@ include file="/WEB-INF/views/layout/meta.jsp"%>
 <%@ include file="/WEB-INF/views/layout/include-css.jsp"%>
@@ -53,7 +53,7 @@
 	</div>
 
 	<!-- Sport-bike -->
-	<section class="bg-secondary text-white">
+	<section class="bg-secondary text-white border">
 		<div class="container">
 
 			<!-- Section title -->
@@ -66,11 +66,11 @@
 			<!-- List -->
 			<div class="row py-3">
 				<c:forEach var="bike" items="${sportBikes}" begin="0" end="8">
-					<div class="col-4 img-hover">
+					<div class="col-4 img-hover mb-3">
 						<a href="/motor-detail/${bike.id}" class="text-decoration-none text-reset">
 							<img alt="${bike.name}" src="/files/${bike.attachments[0].name}"
-							class="img-thumbnail">
-							<h3 class="text-uppercase text-center pt-3">${bike.name}</h3>
+							class="img-thumbnail" style="width: 500px; height: 220px;">
+							<h3 class="text-capitalize text-center pt-3"><span>${bike.brand} ${bike.name}</span></h3>
 						</a>
 					</div>
 				</c:forEach>
@@ -90,7 +90,7 @@
 	<hr class="my-0">
 
 	<!-- Naked-bike -->
-	<section class="bg-light text-dark">
+	<section class="bg-light text-dark mt-3 border">
 		<div class="container">
 
 			<!-- Section title -->
@@ -103,11 +103,11 @@
 			<!-- List -->
 			<div class="row py-3">
 				<c:forEach var="bike" items="${nakedBikes}" begin="0" end="8">
-					<div class="col-4 img-hover">
+					<div class="col-4 img-hover mb-3">
 						<a href="/motor-detail/${bike.id}" class="text-decoration-none text-reset">
 							<img alt="${bike.name}" src="/files/${bike.attachments[0].name}"
-							class="img-thumbnail">
-							<h3 class="text-uppercase text-center pt-3">${bike.name}</h3>
+							class="img-thumbnail" style="width: 500px; height: 220px;">
+							<h3 class="text-capitalize text-center pt-3"><span>${bike.brand} ${bike.name}</span></h3>
 						</a>
 					</div>
 				</c:forEach>

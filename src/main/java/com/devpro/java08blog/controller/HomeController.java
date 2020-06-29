@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import com.devpro.java08blog.entities.Category;
 import com.devpro.java08blog.repositories.CategoryRepository;
@@ -23,7 +22,7 @@ public class HomeController {
 	@Autowired MotorbikeRepository motorbikeRepo;
 	@Autowired CategoryRepository categoryRepo;
 	
-	@RequestMapping(value = { "/home" }, method = RequestMethod.GET)
+	@GetMapping("/home")
 	public String home(final ModelMap model, final HttpServletRequest request, final HttpServletResponse response) {
 		Category sportCategory = categoryRepo.findByName("Sport-bike");
 		Category nakedCategory = categoryRepo.findByName("Naked-bike");

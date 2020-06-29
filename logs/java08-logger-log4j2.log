@@ -1,0 +1,34 @@
+2020-06-15 12:53:41,620 INFO o.s.b.StartupInfoLogger [restartedMain] Starting StartTomcatServer on DESKTOP-PGUCCN0 with PID 63092 (started by Admin in D:\Java Web 2\java08blog)
+2020-06-15 12:53:41,644 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2020-06-15 12:53:41,854 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-06-15 12:53:41,855 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-06-15 12:53:43,929 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-06-15 12:53:44,327 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 365ms. Found 8 repository interfaces.
+2020-06-15 12:53:46,034 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$840081a4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-15 12:53:47,835 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2020-06-15 12:53:47,870 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2020-06-15 12:53:47,890 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2020-06-15 12:53:47,892 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-06-15 12:53:48,701 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2020-06-15 12:53:48,739 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-06-15 12:53:48,740 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6884 ms
+2020-06-15 12:53:49,143 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-06-15 12:53:50,474 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-06-15 12:53:50,839 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-06-15 12:53:51,040 INFO o.h.Version [restartedMain] HHH000412: Hibernate Core {5.3.9.Final}
+2020-06-15 12:53:51,044 INFO o.h.c.Environment [restartedMain] HHH000206: hibernate.properties not found
+2020-06-15 12:53:51,348 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-06-15 12:53:51,721 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-06-15 12:53:54,749 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-15 12:53:54,822 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2020-06-15 12:53:56,443 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-15 12:53:57,268 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22d721da, org.springframework.security.web.context.SecurityContextPersistenceFilter@7fe3e055, org.springframework.security.web.header.HeaderWriterFilter@5ae0ca97, org.springframework.security.web.authentication.logout.LogoutFilter@3553c1b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@557ba65e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cf2908b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f8337aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@90378b9, org.springframework.security.web.session.SessionManagementFilter@33feb088, org.springframework.security.web.access.ExceptionTranslationFilter@2096900e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78732f3d]
+2020-06-15 12:53:57,911 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2020-06-15 12:53:58,031 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2020-06-15 12:53:58,039 INFO o.s.b.StartupInfoLogger [restartedMain] Started StartTomcatServer in 17.988 seconds (JVM running for 19.983)
+2020-06-15 12:54:11,767 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-15 12:54:11,767 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2020-06-15 12:54:11,787 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-3] Completed initialization in 18 ms
+2020-06-15 12:54:12,002 INFO o.h.h.i.QueryTranslatorFactoryInitiator [http-nio-8080-exec-3] HHH000397: Using ASTQueryTranslatorFactory

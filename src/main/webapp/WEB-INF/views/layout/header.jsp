@@ -19,7 +19,7 @@
 				class="nav-link">
 					<h3 class="text-gray">Naked-bike</h3>
 			</a></li>
-			<li class="nav-item align-self-center"><a href="/checkout"
+			<li class="nav-item align-self-center"><a href="/cart"
 				class="nav-link">
 					<h3 class="text-gray">Giỏ hàng</h3>
 			</a></li>

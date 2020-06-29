@@ -6,7 +6,7 @@
 <html lang="en">
 
 <head>
-<title>${pageTitle.name}</title>
+<title>Trang chi tiết sản phẩm</title>
 
 <%@ include file="/WEB-INF/views/layout/meta.jsp"%>
 <%@ include file="/WEB-INF/views/layout/include-css.jsp"%>
@@ -282,7 +282,7 @@
 							</div>
 						</form:form>
 						<hr class="my-4">
-						<ul class="media-list">
+				<!-- 		<ul class="media-list">
 							<li class="media"><a href="#" class="float-left mr-2"> <img
 									src="https://bootdey.com/img/Content/user_1.jpg" alt=""
 									class="rounded-circle">
@@ -322,7 +322,7 @@
 										consectetur adipiscing elit.
 									</p>
 								</div></li>
-						</ul>
+						</ul>-->
 					</div>
 				</div>
 			</div>
@@ -351,7 +351,7 @@
 					
 					// call ajax
 					$.ajax({
-						url: "/api/cart/add",
+						url: "/cart/add",
 						type: "post",
 						contentType: "application/json", // dữ liệu gửi lên web-service có dạng là json.
 						data: JSON.stringify(dataSendToBackEnd), // object json -> string json

@@ -7,14 +7,14 @@
 <html lang="en">
 
 <head>
-<title>${pageTitle.name}</title>
+<title>Naked Bike</title>
 
 <%@ include file="/WEB-INF/views/layout/meta.jsp"%>
 <%@ include file="/WEB-INF/views/layout/include-css.jsp"%>
 
 </head>
 
-<body>
+<body class="bg-light">
 
 	<!-- Navbar -->
 	<%@ include file="/WEB-INF/views/layout/header.jsp"%>
@@ -105,10 +105,10 @@
 			<!-- List -->
 			<div class="row py-3">
 				<c:forEach var="nakedBike" items="${nakedBikes}">
-					<div class="col-4 img-hover">
+					<div class="col-4 img-hover mb-5">
 						<a href="/motor-detail/${nakedBike.id}" class="text-decoration-none text-reset">
-  						<img alt="${nakedBike.name}" src="/files/${nakedBike.attachments[0].name}" class="img-thumbnail">	
-							<h2 class="text-uppercase text-center pt-3">${nakedBike.name}</h2>
+  						<img alt="${nakedBike.name}" src="/files/${nakedBike.attachments[0].name}" class="img-thumbnail" style="width: 500px; height: 220px;">	
+							<h3 class="text-capitalize text-center pt-3"><span>${nakedBike.brand} ${nakedBike.name}</span></h3>
 						</a>
 					</div>
 				</c:forEach>
@@ -116,14 +116,10 @@
 		</div>
 	</section>
 	
-	<hr class="my-4">
-	
-	<div class="clearfix text-center">
+	<div class="clearfix text-center mb-5">
 		<a class="btn btn-warning text-white" href="/naked-bike?page=${currentPage - 1}">Quay lại</a>
 		<a class="btn btn-warning text-white" href="/naked-bike?page=${currentPage + 1}">Xem tiếp</a>
 	</div>
-
-	<hr class="my-4">
 
 	<!-- Footer -->
 	<%@ include file="/WEB-INF/views/layout/footer.jsp"%>
