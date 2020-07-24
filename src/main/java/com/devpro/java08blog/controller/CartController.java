@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.devpro.java08blog.dto.ApiResponse;
 import com.devpro.java08blog.dto.CartItem;
-import com.devpro.java08blog.entities.Motorbike;
-import com.devpro.java08blog.repositories.MotorbikeRepository;
+import com.devpro.java08blog.entity.Motorbike;
+import com.devpro.java08blog.repository.MotorbikeRepository;
 
 @Controller
 public class CartController {
@@ -58,6 +58,7 @@ public class CartController {
 		return "cart";
 	}
 
+	@SuppressWarnings("unchecked")
 	private void addCart(Motorbike motorbike, int quantity, HttpServletRequest request) {
 		// lấy đối tượng session trên server(lưu trong RAM)
 		HttpSession httpSession = request.getSession();
@@ -94,6 +95,7 @@ public class CartController {
 
 	}
 	
+	@SuppressWarnings("unchecked")
 	private void removeCart(Motorbike motorbike,HttpServletRequest request) {
 		HttpSession httpSession = request.getSession();
 

@@ -21,11 +21,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.devpro.java08blog.entities.Role;
-import com.devpro.java08blog.entities.User;
-import com.devpro.java08blog.repositories.RoleRepository;
-import com.devpro.java08blog.repositories.UserRepository;
-import com.devpro.java08blog.services.UserService;
+import com.devpro.java08blog.entity.Role;
+import com.devpro.java08blog.entity.User;
+import com.devpro.java08blog.repository.RoleRepository;
+import com.devpro.java08blog.repository.UserRepository;
+import com.devpro.java08blog.service.UserService;
 
 @Controller
 public class UserTableController {

@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.devpro.java08blog.entities.Comment;
-import com.devpro.java08blog.repositories.CommentRepository;
-import com.devpro.java08blog.repositories.MotorbikeRepository;
+import com.devpro.java08blog.entity.Comment;
+import com.devpro.java08blog.repository.CommentRepository;
+import com.devpro.java08blog.repository.MotorbikeRepository;
 
 @Controller
 public class MotorDetailController {

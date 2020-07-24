@@ -19,8 +19,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.devpro.java08blog.entities.User;
-import com.devpro.java08blog.services.UserService;
+import com.devpro.java08blog.entity.User;
+import com.devpro.java08blog.service.UserService;
 
 @Controller
 public class ProfileController {

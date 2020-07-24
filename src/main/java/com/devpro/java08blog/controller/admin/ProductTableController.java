@@ -23,10 +23,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.devpro.java08blog.entities.Motorbike;
-import com.devpro.java08blog.repositories.CategoryRepository;
-import com.devpro.java08blog.repositories.MotorbikeRepository;
-import com.devpro.java08blog.services.MotorbikeService;
+import com.devpro.java08blog.entity.Motorbike;
+import com.devpro.java08blog.repository.CategoryRepository;
+import com.devpro.java08blog.repository.MotorbikeRepository;
+import com.devpro.java08blog.service.MotorbikeService;
 
 @Controller
 public class ProductTableController {
