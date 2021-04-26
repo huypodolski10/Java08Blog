@@ -16,7 +16,7 @@
 	</parent>
 
 	<properties>
-		<common-io-version>2.6</common-io-version>
+		<common-io-version>2.7</common-io-version>
 	</properties>
 
 	<dependencies>
